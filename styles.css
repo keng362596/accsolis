@@ -444,6 +444,68 @@ address {
   margin-bottom: 56px;
 }
 
+/* ---------- Philosophy (tagline) ---------- */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
+  gap: 80px;
+  align-items: center;
+}
+.slogan {
+  font-size: clamp(2.1rem, 4.4vw, 3.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--teal-900);
+}
+.slogan span {
+  color: var(--teal);
+}
+.slogan-sub {
+  margin-top: 16px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--teal-700);
+}
+.pillars {
+  padding: 0;
+  list-style: none;
+}
+.pillar {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 24px;
+  padding-block: 28px;
+  border-top: 1px solid var(--line-strong);
+}
+.pillar:last-child {
+  border-bottom: 1px solid var(--line-strong);
+}
+.pillar-no {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--teal-700);
+  font-variant-numeric: tabular-nums;
+}
+.pillar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.pillar-en {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.pillar p {
+  color: var(--ink-soft);
+}
+
 /* ---------- Services ---------- */
 .services-grid {
   display: grid;
@@ -857,6 +919,7 @@ address {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
+  .philosophy-grid,
   .services-grid,
   .about-grid,
   .faq-grid,
